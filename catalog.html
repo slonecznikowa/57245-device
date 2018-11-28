@@ -10,15 +10,15 @@
   			<a class="main-header-logo" href="index.html">
 	          	<img src="img/logo.svg" width="111" height="24" alt="Логотип интернет-магазина Device">
 	        </a>
-  			<div class="user-navigation">
-  				<span></span><input type="search" placeholder="Поиск по сайту">
-  				<span></span><a href="#" class="">Валентин Петухов</a>
-	          	<span></span><a href="#" class="">Выйти</a>
-	          	<span></span><a href="#" class="compare-link">Сравнить</a>
-	          	<span></span><a href="#" class="cart">Корзина</a>
+  			<div class="main-header-user-navigation">
+  				<input type="search" placeholder="Поиск по сайту">
+  				<a href="#" class="">Валентин Петухов</a>
+	          	<a href="#" class="">Выйти</a>
+	          	<a href="#" class="compare-link">Сравнить</a>
+	          	<a href="#" class="cart">Корзина</a>
 	        </div>
 			<nav class="main-navigation">
-  				<ul class="site-navigation">
+  				<ul>
 		    		<li>
 		    			<a href="catalog.html">Каталог товаров</a>
 		    			<ul>
@@ -46,7 +46,7 @@
 	    	<section class="filters">
         		<h2 class="visually-hidden">Фильтр товаров</h2>
         		<form>
-        			<h3>Цвет</h3>
+        			<span>Цвет</span>
         			<label>
 			  			<input type="checkbox" checked> Чёрный
 					</label>
@@ -62,7 +62,7 @@
 					<label>
 			  			<input type="checkbox"> Розовый
 					</label>
-					<h3>Bluetooth</h3>
+					<span>Bluetooth</span>
 					<label>
 			  			<input type="radio"> Есть
 					</label>
@@ -79,6 +79,8 @@
 						<p class="catalog-item-image">
 	              			<a href="catalog-item.html">
 	              				<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+	              				<button class="btn-cart-add">В коризину</button>
+	              				<button class="btn-copmare-add">Добавить к сравнению</button>
 	              			</a>
 	            		</p>
 						<h3>
@@ -86,20 +88,12 @@
 						</h3>
 						<p class="catalog-item-price">500 руб.</p>
 					</li>
-					<!--Можно ли сделать такую разметку?-->
-					<!--
-						<li class="catalog-item">
-							<a href="catalog-item.html">
-								<img class="catalog-item-image" src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-	              				<h3>Любительская селфи-палка</h3>
-								<p class="catalog-item-price">500 руб.</p>
-							</a>
-						</li>
-					-->
 					<li class="catalog-item">
 						<p class="catalog-item-image">
 	              			<a href="catalog-item.html">
 	              				<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+	              				<button class="btn-cart-add">В коризину</button>
+	              				<button class="btn-copmare-add">Добавить к сравнению</button>
 	              			</a>
 	            		</p>
 						<h3>
@@ -111,6 +105,8 @@
 						<p class="catalog-item-image">
 	              			<a href="catalog-item.html">
 	              				<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+	              				<button class="btn-cart-add">В коризину</button>
+	              				<button class="btn-copmare-add">Добавить к сравнению</button>
 	              			</a>
 	            		</p>
 						<h3>
@@ -122,6 +118,8 @@
 						<p class="catalog-item-image">
 	              			<a href="catalog-item.html">
 	              				<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+	              				<button class="btn-cart-add">В коризину</button>
+	              				<button class="btn-copmare-add">Добавить к сравнению</button>
 	              			</a>
 	            		</p>
 						<h3>
@@ -134,39 +132,39 @@
 			</section>
 		</main>
 		<footer class="main-footer">
-			<section>
+			<div>
 				<a class="main-footer-logo" href="index.html">
 		          	<img src="img/logo.svg" width="111" height="24" alt="Логотип интернет-магазина Device">
 		        </a>
-				<div class="user-footer-navigation">
-	  				<span></span><a href="#" class="login-link">Войти</a>
-		          	<span></span><a href="#" class="compare-link">Сравнить</a>
-		          	<span></span><a href="#" class="cart">Корзина</a>
-		        </div>
-		    </section>
-		    <section>
-				<p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
-				<nav class="footer-navigation">
-	  				<ul class="site-navigation">
+		        <p class="main-footer-contacts">г. Москва, ул. Строителей, 15</p>
+			</div>
+			<div>
+				<nav class="main-footer-navigation">
+	  				<ul>
 			    		<li><a href="delivery.html">Доставка</a></li>
 			    		<li><a href="garanty.html">Гарантия</a></li>
 			    		<li><a href="contacts.html">Контакты</a></li>
 			    	</ul>
 				</nav>
-				<p class="footer-contacts">Тел.: +7 (495) 495-95-95</p>
-			</section>
-			<section>
-				<div class="footer-social">
+				<div class="main-footer-social">
 	    			<ul>
-	          			<li><a class="social-button" href="#">Facebook</a></li>
-				        <li><a class="social-button" href="#">Instagram</a></li>
-				        <li><a class="social-button" href="#">Twitter</a></li>
+	          			<li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
+				        <li><a class="social-btn social-btn-insta" href="#">Instagram</a></li>
+				        <li><a class="social-btn social-btn-twt" href="#">Twitter</a></li>
 	        		</ul>
 	    		</div>
-	    		<p class="footer-copyright">
+			</div>
+			<div>
+				<div class="main-footer-user-navigation">
+	  				<a href="#" class="login-link">Войти</a>
+		          	<a href="#" class="compare-link">Сравнить</a>
+		          	<a href="#" class="cart">Корзина</a>
+		        </div>
+		        <p class="main-footer-contacts">Тел.: +7 (495) 495-95-95</p>
+		        <p class="main-footer-copyright">
 	        		<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 	      		</p>
-	      	</section>
+			</div>
 		</footer>
 	</body>
 </html>

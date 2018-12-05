@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-	    <title>HTML Academy: Девайс</title>
+	    <title>HTML Academy: Девайс - Каталог</title>
 	    <link rel="stylesheet" href="style.css">
 	</head>
   	<body>
@@ -12,27 +12,27 @@
 	        </a>
   			<div class="main-header-user-navigation">
   				<input type="search" placeholder="Поиск по сайту">
-  				<a href="#" class="">Валентин Петухов</a>
-	          	<a href="#" class="">Выйти</a>
-	          	<a href="#" class="compare-link">Сравнить</a>
-	          	<a href="#" class="cart">Корзина</a>
+  				<a href="account" class="user-profile">Валентин Петухов</a>
+	          	<a href="account/logout" class="logout-link">Выйти</a>
+	          	<a href="account/compare" class="compare-link">Сравнить</a>
+	          	<a href="account/cart" class="cart">Корзина</a>
 	        </div>
-			<nav class="main-navigation">
+			<nav class="main-navigation" role="menubar">
   				<ul>
-		    		<li>
-		    			<a href="catalog.html">Каталог товаров</a>
-		    			<ul>
-		    				<li><a href="virtual_reality.html">Виртуальная реальность</a></li>
-		    				<li><a href="monopods.html">Моноподы для селфи</a></li>
-		    				<li><a href="delivery.html">Экшн-камеры</a></li>
-		    				<li><a href="delivery.html">Фитнес-браслеты</a></li>
-		    				<li><a href="delivery.html">Умные часы</a></li>
-		    				<li><a href="delivery.html">Квадрокоптеры</a></li>
+		    		<li aria-current="page" aria-haspopup="true" aria-labelledby="catalog-menu" role="menuitem" tabindex="0">
+		    			<a><span class="visually-hidden">Текущий пункт:</span> Каталог товаров</a>
+		    			<ul role="menu">
+		    				<li role="menuitem"><a href="virtual_reality.html">Виртуальная реальность</a></li>
+		    				<li role="menuitem"><a href="monopods.html">Моноподы для селфи</a></li>
+		    				<li role="menuitem"><a href="delivery.html">Экшн-камеры</a></li>
+		    				<li role="menuitem"><a href="delivery.html">Фитнес-браслеты</a></li>
+		    				<li role="menuitem"><a href="delivery.html">Умные часы</a></li>
+		    				<li role="menuitem"><a href="delivery.html">Квадрокоптеры</a></li>
 		    			</ul>
 					</li>
-		    		<li><a href="delivery.html">Доставка</a></li>
-		    		<li><a href="garanty.html">Гарантия</a></li>
-		    		<li><a href="contacts.html">Контакты</a></li>
+		    		<li role="menuitem"><a href="delivery.html">Доставка</a></li>
+		    		<li role="menuitem"><a href="garanty.html">Гарантия</a></li>
+		    		<li role="menuitem"><a href="contacts.html">Контакты</a></li>
 		    	</ul>
 			</nav>
   		</header>
@@ -45,32 +45,47 @@
 	    	</ul>
 	    	<section class="filters">
         		<h2 class="visually-hidden">Фильтр товаров</h2>
-        		<form>
-        			<span>Цвет</span>
-        			<label>
-			  			<input type="checkbox" checked> Чёрный
-					</label>
-					<label>
-			  			<input type="checkbox"> Белый
-					</label>
-					<label>
-			  			<input type="checkbox" checked> Синий
-					</label>
-					<label>
-			  			<input type="checkbox" checked> Красный
-					</label>
-					<label>
-			  			<input type="checkbox"> Розовый
-					</label>
-					<span>Bluetooth</span>
-					<label>
-			  			<input type="radio"> Есть
-					</label>
-					<label>
-			  			<input type="radio"> Нет
-					</label>
-					<input type="submit" value="Показать">
-        		</form>
+        		<form class="filter" method="get" action="">
+        			<fieldset>
+        				<legend>Цвет</legend>
+        				<ul>
+        					<li>
+        						<input type="checkbox" name="color-black" id="filter-color-black" checked>
+        						<label for="filter-color-black">Чёрный</label>
+        					</li>
+        					<li>
+        						<input type="checkbox" name="color-white" id="filter-color-white">
+        						<label for="filter-color-white">Белый</label>
+        					</li>
+        					<li>
+        						<input type="checkbox" name="color-blue" id="filter-color-blue" checked>
+        						<label for="filter-color-blue">Синий</label>
+        					</li>
+        					<li>
+        						<input type="checkbox" name="color-red" id="filter-color-red" checked>
+        						<label for="filter-color-red">Красный</label>
+        					</li>
+        					<li>
+        						<input type="checkbox" name="color-pink" id="filter-color-pink">
+        						<label for="filter-color-pink">Розовый</label>
+        					</li>
+        				</ul>
+        			</fieldset>
+        			<fieldset>
+        				<legend>Bluetooth</legend>
+        				<ul>
+        					<li>
+        						<input type="radio" name="bluetooth-yes" id="filter-bluetooth-yes" checked>
+        						<label for="filter-bluetooth-yes">Есть</label> 
+        					</li>
+        					<li>
+        						<input type="radio" name="bluetooth-no" id="filter-bluetooth-no">
+        						<label for="filter-bluetooth-no">Нет</label> 
+        					</li>
+        				</ul>
+					</fieldset>
+					<button class="button" type="submit">Показать</button>
+				</form>
 			</section>
 			<section class="catalog">
 				<h2 class="visually-hidden">Список моноподов для селфи</h2>
@@ -133,35 +148,34 @@
 		</main>
 		<footer class="main-footer">
 			<div>
-				<a class="main-footer-logo" href="index.html">
+				<a class="main-footer-logo">
 		          	<img src="img/logo.svg" width="111" height="24" alt="Логотип интернет-магазина Device">
 		        </a>
+		        <div class="main-footer-user-navigation">
+  					<a href="account" class="user-profile">Валентин Петухов</a>
+	          		<a href="account/logout" class="logout-link">Выйти</a>
+	          		<a href="account/compare" class="compare-link">Сравнить</a>
+	          		<a href="account/cart" class="cart">Корзина</a>
+	        	</div>
+	        </div>
+			<div>
 		        <p class="main-footer-contacts">г. Москва, ул. Строителей, 15</p>
+				<ul class="main-footer-navigation" role="menubar">
+			    	<li role="menuitem"><a href="delivery.html">Доставка</a></li>
+			    	<li role="menuitem"><a href="garanty.html">Гарантия</a></li>
+			    	<li role="menuitem"><a href="contacts.html">Контакты</a></li>
+			    </ul>
+				<p class="main-footer-contacts">Тел.: +7 (495) 495-95-95</p>
 			</div>
 			<div>
-				<nav class="main-footer-navigation">
-	  				<ul>
-			    		<li><a href="delivery.html">Доставка</a></li>
-			    		<li><a href="garanty.html">Гарантия</a></li>
-			    		<li><a href="contacts.html">Контакты</a></li>
-			    	</ul>
-				</nav>
 				<div class="main-footer-social">
 	    			<ul>
-	          			<li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
-				        <li><a class="social-btn social-btn-insta" href="#">Instagram</a></li>
-				        <li><a class="social-btn social-btn-twt" href="#">Twitter</a></li>
+	          			<li><a class="social-btn social-btn-fb" href="https://www.facebook.com/">Facebook</a></li>
+				        <li><a class="social-btn social-btn-insta" href="http://instagram.com/">Instagram</a></li>
+				        <li><a class="social-btn social-btn-twt" href="https://twitter.com/">Twitter</a></li>
 	        		</ul>
 	    		</div>
-			</div>
-			<div>
-				<div class="main-footer-user-navigation">
-	  				<a href="#" class="login-link">Войти</a>
-		          	<a href="#" class="compare-link">Сравнить</a>
-		          	<a href="#" class="cart">Корзина</a>
-		        </div>
-		        <p class="main-footer-contacts">Тел.: +7 (495) 495-95-95</p>
-		        <p class="main-footer-copyright">
+				<p class="main-footer-copyright">
 	        		<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 	      		</p>
 			</div>

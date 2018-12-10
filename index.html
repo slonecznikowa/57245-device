@@ -3,12 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 	    <title>HTML Academy: Девайс - Главная</title>
-	    <link rel="stylesheet" href="style.css">
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/style.css">
+	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 	</head>
   	<body>
   		<header class="main-header">
   			<a class="main-header-logo">
-	          	<img src="img/logo.svg" width="111" height="24" alt="Логотип интернет-магазина Device">
+	          	<img src="img/logo.png" width="163" height="36" alt="Логотип интернет-магазина Device">
 	        </a>
   			<div class="main-header-user-navigation">
   				<input type="search" placeholder="Поиск по сайту">
@@ -21,17 +23,35 @@
 		    		<li aria-haspopup="true" aria-labelledby="catalog-menu" role="menuitem" tabindex="0">
 		    			<a href="catalog.html">Каталог товаров</a>
 		    			<ul role="menu">
-		    				<li role="menuitem"><a href="virtual_reality.html">Виртуальная реальность</a></li>
-		    				<li role="menuitem"><a href="monopods.html">Моноподы для селфи</a></li>
-		    				<li role="menuitem"><a href="delivery.html">Экшн-камеры</a></li>
-		    				<li role="menuitem"><a href="delivery.html">Фитнес-браслеты</a></li>
-		    				<li role="menuitem"><a href="delivery.html">Умные часы</a></li>
-		    				<li role="menuitem"><a href="delivery.html">Квадрокоптеры</a></li>
+		    				<li role="menuitem">
+		    					<a href="virtual_reality.html">Виртуальная реальность</a>
+		    				</li>
+		    				<li role="menuitem">
+		    					<a href="monopods.html">Моноподы для селфи</a>
+		    				</li>
+		    				<li role="menuitem">
+		    					<a href="delivery.html">Экшн-камеры</a>
+		    				</li>
+		    				<li role="menuitem">
+		    					<a href="delivery.html">Фитнес-браслеты</a>
+		    				</li>
+		    				<li role="menuitem">
+		    					<a href="delivery.html">Умные часы</a>
+		    				</li>
+		    				<li role="menuitem">
+		    					<a href="delivery.html">Квадрокоптеры</a>
+		    				</li>
 		    			</ul>
 					</li>
-		    		<li role="menuitem"><a href="delivery.html">Доставка</a></li>
-		    		<li role="menuitem"><a href="garanty.html">Гарантия</a></li>
-		    		<li role="menuitem"><a href="contacts.html">Контакты</a></li>
+		    		<li role="menuitem">
+		    			<a href="delivery.html">Доставка</a>
+		    		</li>
+		    		<li role="menuitem">
+		    			<a href="garanty.html">Гарантия</a>
+		    		</li>
+		    		<li role="menuitem">
+		    			<a href="contacts.html">Контакты</a>
+		    		</li>
 		    	</ul>
 			</nav>
   		</header>
@@ -51,29 +71,74 @@
   			<section class="contacts">
   				<h2>Контакты</h2>
   				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-  				<a href="img/map.jpg"><img src="img/map.jpg" width="566" height="222" alt="Офис интернет-магазина Device по адресу: г. Москва, ул. Строителей, 15"></a>
-  				<ul>
-		    		<li>Деловые Линии</li>
-		    		<li>Автотрейдинг</li>
-		    		<li>ЖелДорЭкспедиция</li>
-		    	</ul>
-		    	<a href="contacts.html">Напишите нам</a>
+  				<a href="img/map.jpg">
+  					<img src="img/map.jpg" width="566" height="222" alt="Офис интернет-магазина Device по адресу: г. Москва, ул. Строителей, 15">
+  				</a>
+  				<a href="contacts.html">Напишите нам</a>
   			</section>
-
-  			<section class="modal modal-mail">
+		</main>
+		<footer class="main-footer">
+			<div>
+				<a class="main-footer-logo">
+		          	<img src="img/logo-footer.png" width="163" height="36" alt="Логотип интернет-магазина Device">
+		        </a>
+		        <div class="main-footer-user-navigation">
+	  				<a href="account" class="login-link">Войти</a>
+		          	<a href="account/compare" class="compare-link">Сравнить</a>
+		          	<a href="account/cart" class="cart">Корзина</a>
+		        </div>
+			</div>
+			<div>
+		        <p class="main-footer-contacts">г. Москва, ул. Строителей, 15</p>
+				<ul class="main-footer-navigation" role="menu">
+			    	<li role="menuitem">
+			    		<a href="delivery.html">Доставка</a>
+			    	</li>
+			    	<li role="menuitem">
+			    		<a href="garanty.html">Гарантия</a>
+			    	</li>
+			    	<li role="menuitem">
+			    		<a href="contacts.html">Контакты</a>
+			    	</li>
+			    </ul>
+				<p class="main-footer-contacts">Тел.: +7 (495) 495-95-95</p>
+			</div>
+			<div>
+				<div class="main-footer-social">
+	    			<ul>
+	          			<li>
+	          				<a class="social-button social-button-facebook" href="https://www.facebook.com/">Facebook</a>
+	          			</li>
+				        <li>
+				        	<a class="social-button social-button-instagram" href="http://instagram.com/">Instagram</a>
+				        </li>
+				        <li>
+				        	<a class="social-button social-button-twitter" href="https://twitter.com/">Twitter</a>
+				        </li>
+	        		</ul>
+	    		</div>
+				<p class="main-footer-copyright">
+	        		<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+	      		</p>
+			</div>
+		</footer>
+		<section class="modal modal-mail">
         		<h2 class="visually-hidden">Написать письмо</h2>
 		        <form class="mail-form" method="post" action="">
 		        	<p class="mail-item">
-            			<label for="mail-name">Ваше имя:</label>
-            			<input id="mail-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+		        		<label for="mail-name">Ваше имя: 
+		        			<input id="mail-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+		        		</label>
           			</p>
 		            <p class="mail-item">
-		            	<label for="mail-email">Ваш e-mail:</label>
-		            	<input id="mail-email" type="email" name="e-mail" value="" placeholder="email@example.com">
+		            	<label for="mail-email">Ваш e-mail:
+		            		<input id="mail-email" type="email" name="e-mail" value="" placeholder="email@example.com">
+		            	</label>
 		            </p>
 		            <p class="mail-item">
-		            	<label for="mail-text">Текст письма:</label>
-		            	<textarea id="mail-text" name="text" value="" placeholder="в свободной форме"></textarea>
+		            	<label for="mail-text">Текст письма:
+		            		<textarea id="mail-text" name="text" value="" placeholder="в свободной форме"></textarea>
+		            	</label>
 		            </p>
 					<button class="button" type="submit">Отправить</button>
 					<button class="modal-close" type="button">Закрыть</button>
@@ -86,40 +151,6 @@
         		</p>
         		<button class="modal-close" type="button">Закрыть</button>
       		</section>
-		</main>
-		<footer class="main-footer">
-			<div>
-				<a class="main-footer-logo">
-		          	<img src="img/logo.svg" width="111" height="24" alt="Логотип интернет-магазина Device">
-		        </a>
-		        <div class="main-footer-user-navigation">
-	  				<a href="account" class="login-link">Войти</a>
-		          	<a href="account/compare" class="compare-link">Сравнить</a>
-		          	<a href="account/cart" class="cart">Корзина</a>
-		        </div>
-			</div>
-			<div>
-		        <p class="main-footer-contacts">г. Москва, ул. Строителей, 15</p>
-				<ul class="main-footer-navigation" role="menu">
-			    	<li role="menuitem"><a href="delivery.html">Доставка</a></li>
-			    	<li role="menuitem"><a href="garanty.html">Гарантия</a></li>
-			    	<li role="menuitem"><a href="contacts.html">Контакты</a></li>
-			    </ul>
-				<p class="main-footer-contacts">Тел.: +7 (495) 495-95-95</p>
-			</div>
-			<div>
-				<div class="main-footer-social">
-	    			<ul>
-	          			<li><a class="social-btn social-btn-fb" href="https://www.facebook.com/">Facebook</a></li>
-				        <li><a class="social-btn social-btn-insta" href="http://instagram.com/">Instagram</a></li>
-				        <li><a class="social-btn social-btn-twt" href="https://twitter.com/">Twitter</a></li>
-	        		</ul>
-	    		</div>
-				<p class="main-footer-copyright">
-	        		<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-	      		</p>
-			</div>
-		</footer>
 	</body>
 </html>
 

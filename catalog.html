@@ -3,12 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 	    <title>HTML Academy: Девайс - Каталог</title>
-	    <link rel="stylesheet" href="style.css">
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/style.css">
+	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 	</head>
-  	<body>
+  	<body class="inner-page">
   		<header class="main-header">
   			<a class="main-header-logo" href="index.html">
-	          	<img src="img/logo.svg" width="111" height="24" alt="Логотип интернет-магазина Device">
+	          	<img src="img/logo.png" width="163" height="36" alt="Логотип интернет-магазина Device">
 	        </a>
   			<div class="main-header-user-navigation">
   				<input type="search" placeholder="Поиск по сайту">
@@ -20,27 +22,51 @@
 			<nav class="main-navigation" role="menubar">
   				<ul>
 		    		<li aria-current="page" aria-haspopup="true" aria-labelledby="catalog-menu" role="menuitem" tabindex="0">
-		    			<a><span class="visually-hidden">Текущий пункт:</span> Каталог товаров</a>
+		    			<a>
+		    				<span class="visually-hidden">Текущий пункт:</span>	Каталог товаров
+		    			</a>
 		    			<ul role="menu">
-		    				<li role="menuitem"><a href="virtual_reality.html">Виртуальная реальность</a></li>
-		    				<li role="menuitem"><a href="monopods.html">Моноподы для селфи</a></li>
-		    				<li role="menuitem"><a href="delivery.html">Экшн-камеры</a></li>
-		    				<li role="menuitem"><a href="delivery.html">Фитнес-браслеты</a></li>
-		    				<li role="menuitem"><a href="delivery.html">Умные часы</a></li>
-		    				<li role="menuitem"><a href="delivery.html">Квадрокоптеры</a></li>
+		    				<li role="menuitem">
+		    					<a href="virtual_reality.html">Виртуальная реальность</a>
+		    				</li>
+		    				<li role="menuitem">
+		    					<a href="monopods.html">Моноподы для селфи</a>
+		    				</li>
+		    				<li role="menuitem">
+		    					<a href="delivery.html">Экшн-камеры</a>
+		    				</li>
+		    				<li role="menuitem">
+		    					<a href="delivery.html">Фитнес-браслеты</a>
+		    				</li>
+		    				<li role="menuitem">
+		    					<a href="delivery.html">Умные часы</a>
+		    				</li>
+		    				<li role="menuitem">
+		    					<a href="delivery.html">Квадрокоптеры</a>
+		    				</li>
 		    			</ul>
 					</li>
-		    		<li role="menuitem"><a href="delivery.html">Доставка</a></li>
-		    		<li role="menuitem"><a href="garanty.html">Гарантия</a></li>
-		    		<li role="menuitem"><a href="contacts.html">Контакты</a></li>
+		    		<li role="menuitem">
+		    			<a href="delivery.html">Доставка</a>
+		    		</li>
+		    		<li role="menuitem">
+		    			<a href="garanty.html">Гарантия</a>
+		    		</li>
+		    		<li role="menuitem">
+		    			<a href="contacts.html">Контакты</a>
+		    		</li>
 		    	</ul>
 			</nav>
   		</header>
   		<main class="container">
   			<h1 class="page-title">Моноподы для селфи</h1>
 			<ul class="breadcrumbs">
-			    <li><a href="index.html">Главная</a></li>
-			    <li><a href="catalog.html">Каталог товаров</a></li>
+			    <li>
+			    	<a href="index.html">Главная</a>
+			    </li>
+			    <li>
+			    	<a href="catalog.html">Каталог товаров</a>
+			    </li>
 			    <li class="breadcrumbs-current">Моноподы для селфи</li>
 	    	</ul>
 	    	<section class="filters">
@@ -50,24 +76,29 @@
         				<legend>Цвет</legend>
         				<ul>
         					<li>
-        						<input type="checkbox" name="color-black" id="filter-color-black" checked>
-        						<label for="filter-color-black">Чёрный</label>
+        						<label for="filter-color-black">
+        							<input type="checkbox" name="color-black" id="filter-color-black" value="" checked> Чёрный
+        						</label>
         					</li>
         					<li>
-        						<input type="checkbox" name="color-white" id="filter-color-white">
-        						<label for="filter-color-white">Белый</label>
+        						<label for="filter-color-white">
+        							<input type="checkbox" name="color-white" id="filter-color-white" value="" disabled=""> Белый
+        						</label>
         					</li>
         					<li>
-        						<input type="checkbox" name="color-blue" id="filter-color-blue" checked>
-        						<label for="filter-color-blue">Синий</label>
+        						<label for="filter-color-blue">
+        							<input type="checkbox" name="color-blue" id="filter-color-blue" value="" checked> Синий
+        						</label>
         					</li>
         					<li>
-        						<input type="checkbox" name="color-red" id="filter-color-red" checked>
-        						<label for="filter-color-red">Красный</label>
+        						<label for="filter-color-red">
+        							<input type="checkbox" name="color-red" id="filter-color-red" value="" checked> Красный
+        						</label>
         					</li>
         					<li>
-        						<input type="checkbox" name="color-pink" id="filter-color-pink">
-        						<label for="filter-color-pink">Розовый</label>
+        						<label for="filter-color-pink">
+        							<input type="checkbox" name="color-pink" id="filter-color-pink" value=""> Розовый
+        						</label>
         					</li>
         				</ul>
         			</fieldset>
@@ -75,12 +106,14 @@
         				<legend>Bluetooth</legend>
         				<ul>
         					<li>
-        						<input type="radio" name="bluetooth-yes" id="filter-bluetooth-yes" checked>
-        						<label for="filter-bluetooth-yes">Есть</label> 
+        						<label for="filter-bluetooth-yes">
+        							<input type="radio" name="bluetooth-yes" id="filter-bluetooth-yes" checked> Есть
+        						</label> 
         					</li>
         					<li>
-        						<input type="radio" name="bluetooth-no" id="filter-bluetooth-no">
-        						<label for="filter-bluetooth-no">Нет</label> 
+        						<label for="filter-bluetooth-no">
+        							<input type="radio" name="bluetooth-no" id="filter-bluetooth-no"> Нет
+        						</label> 
         					</li>
         				</ul>
 					</fieldset>
@@ -94,8 +127,8 @@
 						<p class="catalog-item-image">
 	              			<a href="catalog-item.html">
 	              				<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-	              				<button class="btn-cart-add">В коризину</button>
-	              				<button class="btn-copmare-add">Добавить к сравнению</button>
+	              				<button class="button-cart-add">В корзину</button>
+	              				<button class="button-copmare-add">Добавить к сравнению</button>
 	              			</a>
 	            		</p>
 						<h3>
@@ -107,8 +140,8 @@
 						<p class="catalog-item-image">
 	              			<a href="catalog-item.html">
 	              				<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-	              				<button class="btn-cart-add">В коризину</button>
-	              				<button class="btn-copmare-add">Добавить к сравнению</button>
+	              				<button class="button-cart-add">В корзину</button>
+	              				<button class="button-copmare-add">Добавить к сравнению</button>
 	              			</a>
 	            		</p>
 						<h3>
@@ -120,8 +153,8 @@
 						<p class="catalog-item-image">
 	              			<a href="catalog-item.html">
 	              				<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-	              				<button class="btn-cart-add">В коризину</button>
-	              				<button class="btn-copmare-add">Добавить к сравнению</button>
+	              				<button class="button-cart-add">В корзину</button>
+	              				<button class="button-copmare-add">Добавить к сравнению</button>
 	              			</a>
 	            		</p>
 						<h3>
@@ -133,8 +166,8 @@
 						<p class="catalog-item-image">
 	              			<a href="catalog-item.html">
 	              				<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-	              				<button class="btn-cart-add">В коризину</button>
-	              				<button class="btn-copmare-add">Добавить к сравнению</button>
+	              				<button class="button-cart-add">В корзину</button>
+	              				<button class="button-copmare-add">Добавить к сравнению</button>
 	              			</a>
 	            		</p>
 						<h3>
@@ -149,7 +182,7 @@
 		<footer class="main-footer">
 			<div>
 				<a class="main-footer-logo">
-		          	<img src="img/logo.svg" width="111" height="24" alt="Логотип интернет-магазина Device">
+		          	<img src="img/logo-footer.png" width="163" height="36" alt="Логотип интернет-магазина Device">
 		        </a>
 		        <div class="main-footer-user-navigation">
   					<a href="account" class="user-profile">Валентин Петухов</a>
@@ -161,18 +194,30 @@
 			<div>
 		        <p class="main-footer-contacts">г. Москва, ул. Строителей, 15</p>
 				<ul class="main-footer-navigation" role="menubar">
-			    	<li role="menuitem"><a href="delivery.html">Доставка</a></li>
-			    	<li role="menuitem"><a href="garanty.html">Гарантия</a></li>
-			    	<li role="menuitem"><a href="contacts.html">Контакты</a></li>
+			    	<li role="menuitem">
+			    		<a href="delivery.html">Доставка</a>
+			    	</li>
+			    	<li role="menuitem">
+			    		<a href="garanty.html">Гарантия</a>
+			    	</li>
+			    	<li role="menuitem">
+			    		<a href="contacts.html">Контакты</a>
+			    	</li>
 			    </ul>
 				<p class="main-footer-contacts">Тел.: +7 (495) 495-95-95</p>
 			</div>
 			<div>
 				<div class="main-footer-social">
 	    			<ul>
-	          			<li><a class="social-btn social-btn-fb" href="https://www.facebook.com/">Facebook</a></li>
-				        <li><a class="social-btn social-btn-insta" href="http://instagram.com/">Instagram</a></li>
-				        <li><a class="social-btn social-btn-twt" href="https://twitter.com/">Twitter</a></li>
+	          			<li>
+	          				<a class="social-button social-button-facebook" href="https://www.facebook.com/">Facebook</a>
+	          			</li>
+				        <li>
+				        	<a class="social-button social-button-instagram" href="http://instagram.com/">Instagram</a>
+				        </li>
+				        <li>
+				        	<a class="social-button social-button-twitter" href="https://twitter.com/">Twitter</a>
+				        </li>
 	        		</ul>
 	    		</div>
 				<p class="main-footer-copyright">

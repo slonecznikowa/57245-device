@@ -43,30 +43,30 @@ a {
   display: block;
   color: #000000;
 }
-a.main-header-logo:hover,
-a.main-header-logo:focus {
+.main-header-logo:hover,
+.main-header-logo:focus {
 	opacity: 0.6;
 }
-a.main-header-logo:active {
+.main-header-logo:active {
 	opacity: 0.302;
 }
 .main-navigation ul {
 	list-style: none;
 	padding-left: 0;
 }
-.main-navigation ul li:first-child ul {
+.main-navigation-item .sumbenu {
 	display: none;
 }
-.main-navigation ul li:first-child:hover ul {
+.main-navigation-item:hover .sumbenu {
 	display: block;
 }
-.main-navigation ul li a {
+.main-navigation a {
 	font-family: 'Gilroy Bold';
 	font-weight: bold;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 }
-.main-navigation ul li:first-child ul li a {
+.sumbenu a {
 	text-transform: none;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
@@ -80,10 +80,6 @@ a.main-header-logo:active {
 	font-size: 15px;
 	line-height: 30px;
 }
-.main-header-user-navigation a,
-.main-navigation a {
-	color: #000000;
-}
 .main-header-user-navigation a:hover,
 .main-navigation a:hover,
 .main-header-user-navigation a:focus,
@@ -94,7 +90,7 @@ a.main-header-logo:active {
 .main-navigation a:active {
 	opacity: 0.302;
 }
-.main-header-user-navigation input[type="search"] {
+.search {
 	background-color: transparent;
 	border: none;
 	font-family: 'Open Sans', sans-serif;
@@ -105,18 +101,16 @@ a.main-header-logo:active {
 	opacity: 0.3;
 	color: #000000;
 }
-.main-header-user-navigation input[type="search"]:hover {
+.search:hover {
 	opacity: 0.6;
 	cursor: pointer;
 }
-.main-header-user-navigation input[type="search"]:focus {
+.search:focus {
 	opacity: 1;
 }
 .main-header {
 	background-color: #f7e296;
 }
-
-
 h1, h2, h3 {
 	font-family: 'Gilroy Bold';
 	font-weight: bold;
@@ -156,12 +150,12 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
-main ul {
+.about-us-companies {
 	font-size: 15px;
 	font-weight: 700;
 }
-.about_us a, 
-.contacts a {
+.more-link, 
+.contact-us-link {
 	text-transform: uppercase;
 	font-family: 'Gilroy Bold';
 	font-weight: bold;
@@ -171,13 +165,8 @@ main ul {
 .filters {
 	background-color: #eeeeee;
 }
-/*.filters input[type="checkbox"]:checked {
-} */
-.filters input[type="checkbox"]:disabled {
-	color: rgb(166, 166, 166);
- }
 .filter fieldset {
-  border: none;
+  	border: none;
 }
 .filter legend {
 	font-family: 'Gilroy Bold';
@@ -191,7 +180,7 @@ main ul {
 	font-size: 14px;
 	line-height: 40px;
 }
-.filter button {
+.filter .button {
 	font-family: 'Gilroy Bold';
 	font-weight: bold;
 	letter-spacing: 0.2em;
@@ -200,11 +189,14 @@ main ul {
 	border: none;
 	background-color: transparent; 
 }
+.filter-checkbox:disabled {
+	color: rgb(166, 166, 166);
+ }
 .filter ul,
 .catalog-list {
   list-style: none;
 }
-.catalog-item-image button {
+.catalog-item-button {
 	display: none;
 	border: none;
 	background: transparent;
@@ -212,7 +204,7 @@ main ul {
 .catalog-item-image:hover img {
 	opacity: 0.7; 
 }
-.catalog-item-image:hover button {
+.catalog-item-image:hover .catalog-item-button {
 	display: block;
 }
 .button-cart-add {
@@ -250,11 +242,11 @@ main ul {
 	background-color: #464646;
 	color: #ffffff;
 }
-a.main-footer-logo:hover,
-a.main-footer-logo:focus {
+.main-footer-logo:hover,
+.main-footer-logo:focus {
 	opacity: 0.6;
 }
-a.main-footer-logo:active {
+.main-footer-logo:active {
 	opacity: 0.302;
 }
 .main-footer-user-navigation a {
@@ -276,7 +268,7 @@ a.main-footer-logo:active {
 	list-style: none;
 	padding-left: 0;
 }
-.main-footer-navigation li a {
+.main-footer-navigation a {
 	color: #ffffff;
 	opacity: 1;
 	text-transform: uppercase;
@@ -286,28 +278,28 @@ a.main-footer-logo:active {
 	font-weight: bold;
 	letter-spacing: 0.2em;
 }
-.main-footer-navigation li a:hover,
-.main-footer-navigation li a:focus {
+.main-footer-navigation a:hover,
+.main-footer-navigation a:focus {
 	opacity: 0.6;
 }
-.main-footer-navigation li a:active {
+.main-footer-navigation a:active {
 	opacity: 0.302;
 } 
-.main-footer-social ul li a {
+.social-button {
 	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0;
 	line-height: 34px;
 	opacity: 0.3;
 }
-.main-footer-social ul li a:hover,
-.main-footer-social ul li a:focus {
+.social-button:hover,
+.social-button:focus {
 	opacity: 0.6;
 }
-.main-footer-social ul li a:active {
+.social-button:active {
 	opacity: 0.1;
 }
-.inner-page .main-footer-user-navigation a.logout-link {
+.main-footer-user-navigation .logout-link {
     color: rgba(255, 255, 255, 0.302);
 }
 .social-button {

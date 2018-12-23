@@ -18,8 +18,7 @@
                 		<label class="visually-hidden" for="search">Поиск по сайту</label>
                 		<input class="search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
                 		<button class="btn-search" type="submit" tabindex="-1">Найти</button>
-                		<div class="cover"></div>
-            		</form>
+                	</form>
             		<ul class="main-header-user-navigation-list ul-styles-reset">
             			<li class="main-header-user-navigation-item login-link">
             				<a href="account" class="main-header-user-navigation-link">Войти</a> 
@@ -100,23 +99,23 @@
 			        			<fieldset class="filter-group">
 			        				<legend class="filter-title">Цвет</legend>
 			        				<ul class="ul-styles-reset">
-			        					<li>
-			        						<input class="filter-checkbox visually-hidden" type="checkbox" name="color-black" id="filter-color-black" value="" checked>
+			        					<li class="filter-color-item">
+			        						<input class="filter-checkbox visually-hidden" type="checkbox" name="color-black" id="filter-color-black" value="">
 			        						<label class="filter-label" for="filter-color-black">Чёрный</label>
 			        					</li>
-			        					<li>
+			        					<li class="filter-color-item">
 			        						<input class="filter-checkbox visually-hidden" type="checkbox" name="color-white" id="filter-color-white" value="" disabled="">
 			        						<label class="filter-label" for="filter-color-white">Белый</label>
 			        					</li>
-			        					<li>
-			        						<input class="filter-checkbox visually-hidden" type="checkbox" name="color-blue" id="filter-color-blue" value="" checked>
+			        					<li class="filter-color-item">
+			        						<input class="filter-checkbox visually-hidden" type="checkbox" name="color-blue" id="filter-color-blue" value="">
 			        						<label class="filter-label" for="filter-color-blue">Синий</label>
 			        					</li>
-			        					<li>
-			        						<input class="filter-checkbox visually-hidden" type="checkbox" name="color-red" id="filter-color-red" value="" checked>
+			        					<li class="filter-color-item">
+			        						<input class="filter-checkbox visually-hidden" type="checkbox" name="color-red" id="filter-color-red" value="">
 			        						<label class="filter-label" for="filter-color-red">Красный</label>
 			        					</li>
-			        					<li>
+			        					<li class="filter-color-item">
 			        						<input class="filter-checkbox visually-hidden" type="checkbox" name="color-pink" id="filter-color-pink" value="">
 			        						<label class="filter-label" for="filter-color-pink">Розовый</label>
 			        					</li>
@@ -125,15 +124,13 @@
 			        			<fieldset class="filter-group">
 			        				<legend class="filter-title">Bluetooth</legend>
 			        				<ul class="ul-styles-reset">
-			        					<li>
-			        						<label class="filter-label" for="filter-bluetooth-yes">
-			        							<input class="filter-radiobutton" type="radio" name="bluetooth-yes" id="filter-bluetooth-yes" checked> Есть
-			        						</label> 
+			        					<li class="filter-bluetooth-item">
+			        						<input class="filter-radiobutton visually-hidden" type="radio" name="bluetooth-yes" id="filter-bluetooth-yes">
+			        						<label class="filter-label filter-label-radiobutton" for="filter-bluetooth-yes">Есть</label> 
 			        					</li>
-			        					<li>
-			        						<label class="filter-label" for="filter-bluetooth-no">
-			        							<input class="filter-radiobutton" type="radio" name="bluetooth-no" id="filter-bluetooth-no"> Нет
-			        						</label> 
+			        					<li class="filter-bluetooth-item">
+			        						<input class="filter-radiobutton visually-hidden" type="radio" name="bluetooth-no" id="filter-bluetooth-no">
+			        						<label class="filter-label filter-label-radiobutton" for="filter-bluetooth-no">Нет</label> 
 			        					</li>
 			        				</ul>
 								</fieldset>

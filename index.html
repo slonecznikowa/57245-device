@@ -18,8 +18,7 @@
                 		<label class="visually-hidden" for="search">Поиск по сайту</label>
                 		<input class="search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
                 		<button class="btn-search" type="submit" tabindex="-1">Найти</button>
-                		<div class="cover"></div>
-            		</form>
+                	</form>
             		<ul class="main-header-user-navigation-list ul-styles-reset">
             			<li class="main-header-user-navigation-item login-link">
             				<a href="account" class="main-header-user-navigation-link">Войти</a> 
@@ -150,30 +149,27 @@
 			<div class="modal modal-mail">
         		<h2 class="visually-hidden modal-mail-title">Написать письмо</h2>
 		        <form class="mail-form" method="post" action="">
-		        	<p class="mail-item">
-		        		<label for="mail-name">Ваше имя: 
-		        			<input id="mail-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-		        		</label>
-          			</p>
-		            <p class="mail-item">
-		            	<label for="mail-email">Ваш e-mail:
-		            		<input id="mail-email" type="email" name="e-mail" value="" placeholder="email@example.com">
-		            	</label>
-		            </p>
-		            <p class="mail-item">
-		            	<label for="mail-text">Текст письма:
-		            		<textarea id="mail-text" name="text" value="" placeholder="в свободной форме"></textarea>
-		            	</label>
-		            </p>
-					<button class="button" type="submit">Отправить</button>
+		        	<div class="mail-item">
+		        		<div class="mail-item-name">
+		        			<label class="mail-name-label" for="mail-name">Ваше имя:</label>
+		        			<input class="mail-name-input" id="mail-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+		        		</div>
+          				<div class="mail-item-email">
+          					<label class="mail-email-label" for="mail-email">Ваш e-mail:</label>
+          					<input class="mail-email-input" id="mail-email" type="email" name="e-mail" value="" placeholder="email@example.com">
+          				</div>
+		            </div>
+		            <div class="mail-item-text">
+		            	<label class="mail-text-label" for="mail-text">Текст письма:</label>
+		            	<textarea class="mail-textarea" id="mail-text" name="text" value="" placeholder="в свободной форме"></textarea>
+		            </div>
+					<button class="mail-button" type="submit">Отправить</button>
 					<button class="modal-close" type="button">Закрыть</button>
         		</form> 
       		</div>
 			<div class="modal modal-map">
         		<h2 class="visually-hidden modal-map-title">Наш адрес</h2>
-        		<p>
-          			<img src="img/map.jpg" width="566" height="222" alt="Офис интернет-магазина Device по адресу: г. Москва, ул. Строителей, 15">
-        		</p>
+        		<img src="img/map-big.jpg" width="960" height="559" alt="Офис интернет-магазина Device по адресу: г. Москва, ул. Строителей, 15">
         		<button class="modal-close" type="button">Закрыть</button>
       		</div>
 	</body>

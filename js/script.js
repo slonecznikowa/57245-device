@@ -14,6 +14,14 @@ var servicesButton1 = document.querySelector(".services-button-slider-1");
 var servicesButton2 = document.querySelector(".services-button-slider-2");
 var servicesButton3 = document.querySelector(".services-button-slider-3");
 
+var mapButton = document.querySelector(".contacts-map-img");
+var mapModal = document.querySelector(".modal-map");
+var mapClose = document.querySelector(".modal-map .modal-close");
+
+var mailButton = document.querySelector(".contact-us-link");
+var mailModal = document.querySelector(".modal-mail");
+var mailClose = document.querySelector(".modal-mail .modal-close");
+
 
 sliderButton1.addEventListener("click", function(evt) {
   evt.preventDefault(); 
@@ -74,3 +82,27 @@ servicesButton3.addEventListener("click", function(evt) {
   servicesButton2.classList.remove("services-slider-controls-button-active");
   servicesButton3.classList.add("services-slider-controls-button-active");
 } );
+
+
+mapButton.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mapModal.classList.add("modal-open")
+});
+
+mapClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mapModal.classList.remove("modal-open");
+} );
+
+
+mailButton.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mailModal.classList.add("modal-open")
+});
+
+mailClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mailModal.classList.remove("modal-open");
+} );
+
+

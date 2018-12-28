@@ -441,8 +441,8 @@ a {
 .main-footer {
 	background-color: #464646;
 	color: #ffffff;
-	padding-top: 66px;
-    padding-bottom: 66px;
+	/*padding-top: 66px;*/
+    /*padding-bottom: 66px;*/
 }
 .main-footer-logo[href]:hover,
 .main-footer-logo[href]:focus {
@@ -537,6 +537,7 @@ a {
 }
 .main-footer-copyright {
     margin-left: auto;
+    margin-bottom: 66px;
 }
 .main-footer-copyright:hover,
 .main-footer-copyright:focus {
@@ -947,6 +948,9 @@ a {
     /*-webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;*/
+    background-color: #464646;
+    padding-top: 66px;
+    padding-top: 66px;
 }
 .main-footer-logo-and-user-navigation,
 .main-footer-contacts-and-navigation,

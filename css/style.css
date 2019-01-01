@@ -138,20 +138,13 @@ a {
 	margin-top: 37px;
 }
 .about-us-title,
-.contacts-title,
-.modal-mail-title,
-.modal-map-title
-.filters-title
-.catalog-title {
+.contacts-title {
 	font-family: 'Gilroy Bold';
 	font-weight: bold;
 	letter-spacing: 0.01em;
 	font-size: 47px;
 	line-height: 48px;
 	margin-top: 0;
-}
-.about-us-title,
-.contacts-title {
 	margin-bottom: 43px;
 }
 .catalog-item-title {

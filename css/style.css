@@ -72,6 +72,7 @@ a {
 	width: 163px;
 	height: 36px;
 	display: inline-block;
+	vertical-align: top;
 	margin-bottom: 16px;
 }
 .main-header-logo[href]:hover,
@@ -229,6 +230,7 @@ a {
 .main-header-user-navigation-item:before {
 	content: '';
 	display: inline-block;
+	vertical-align: baseline;
 	margin-right: 5px;
 	background-repeat: no-repeat;
 }
@@ -440,6 +442,7 @@ a {
 .main-footer-user-navigation-link:before {
 	content: '';
 	display: inline-block;
+	vertical-align: baseline;
 	margin-right: 5px;
 	background-repeat: no-repeat;
 }
@@ -628,6 +631,7 @@ a {
 	height: 36px;
 	background-size: 27px 36px;
 	display: inline-block;
+	vertical-align: baseline;
 }
 .page-title {
 	font-family: 'Gilroy Bold', 'Helvetica', sans-serif;

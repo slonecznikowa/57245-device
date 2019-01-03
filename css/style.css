@@ -497,6 +497,7 @@ a {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	width: 440px;
+	flex-wrap: wrap;
 }
 .main-footer-navigation-link {
 	color: #ffffff;
@@ -541,6 +542,7 @@ a {
 	-ms-flex-pack: justify;
 	justify-content: center;
 	width: 900px;
+	flex-wrap: wrap;
 }
 .main-footer-social:before {
 	position: absolute;
@@ -1024,6 +1026,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 88px;
+	flex-wrap: wrap;
 }
 .brands-list-image {
 	-webkit-filter: grayscale(100%);

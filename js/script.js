@@ -22,6 +22,18 @@ var mailButton = document.querySelector(".contact-us-link");
 var mailModal = document.querySelector(".modal-mail");
 var mailClose = document.querySelector(".modal-mail .modal-close");
 
+var mailForm = mailModal.querySelector(".mail-form");
+var mailName = mailModal.querySelector(".mail-name-input");
+var mailEmail = mailModal.querySelector(".mail-email-input");
+
+var isStorageSupport = true;
+  var storage = "";
+  
+  try {
+    storage = localStorage.getItem(".mail-name-input");
+  } catch (err) {
+    isStorageSupport = false;
+  }
 
 sliderButton1.addEventListener("click", function(evt) {
   evt.preventDefault(); 
@@ -86,7 +98,7 @@ servicesButton3.addEventListener("click", function(evt) {
 
 mapButton.addEventListener("click", function(evt) {
   evt.preventDefault();
-  mapModal.classList.add("modal-open")
+  mapModal.classList.add("modal-open");
 });
 
 mapClose.addEventListener("click", function(evt) {
@@ -97,12 +109,56 @@ mapClose.addEventListener("click", function(evt) {
 
 mailButton.addEventListener("click", function(evt) {
   evt.preventDefault();
-  mailModal.classList.add("modal-open")
+  mailModal.classList.add("modal-open");
+  if (storage) {
+      mailName.value = storage;
+      mailEmail.focus();
+    }
+    else {
+      mailName.focus();
+    }
 });
 
 mailClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   mailModal.classList.remove("modal-open");
-} );
+  mailModal.classList.remove("modal-error");
+});
+
+mailForm.addEventListener("submit", function (evt) {
+    if (!mailName.value || !mailEmail.value) {
+      evt.preventDefault();
+      mailModal.classList.remove("modal-error");
+      mailModal.offsetWidth = mailModal.offsetWidth;
+      mailModal.classList.add("modal-error");
+      /*alert("Нужно ввести имя и e-mail");*/
+    }
+    else {
+      if (isStorageSupport) {
+        localStorage.setItem(".mail-name-input", mailName.value);
+        }
+    }
+  });
+
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (mailModal.classList.contains("modal-open")) {
+        mailModal.classList.remove("modal-open");
+        mailModal.classList.remove("modal-error");
+      }
+    }
+  });
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (mapModal.classList.contains("modal-open")) {
+        mapModal.classList.remove("modal-open");
+      }
+    }
+  });
+
 
 

@@ -1728,7 +1728,7 @@ a {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	position: relative;
-	background-color: #ffffff; 
+	background-color: #ffffff;
 }
 .mail-name-label,
 .mail-email-label,
@@ -1893,16 +1893,13 @@ a {
 }
 .modal {
 	position: fixed;
-	left: 50%;
 	top: 10%;
-	-webkit-transform: translate(-50%);
-	-ms-transform: translate(-50%);
-	transform: translate(-50%);
+	left: 50%;
+	margin-left: -480px;
 	z-index: 999;
 }
 .modal-mail {
 	width: 960px;
-	margin: auto;
 	-webkit-box-shadow: 0 8px 30px 0 rgba(0 ,0 ,0 , 0.2);
 	box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
 	display: none;
@@ -1910,11 +1907,25 @@ a {
 .modal-map {
 	width: 960px;
 	height: 559px;
-	margin: auto;
 	-webkit-box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
 	box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
 	display: none;
 }
+@keyframes bounce {
+  0% 	{transform: translateY(-2000px);}
+  70% 	{transform: translateY(30px);}
+  90% 	{transform: translateY(-10px);}
+  100% 	{transform: translateY(0);}
+}
+@keyframes shake {
+  0%, 100% 					{transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% 	{transform: translateX(-10px);}
+  20%, 40%, 60%, 80% 		{transform: translateX(10px);}
+}
 .modal-open {
 	display: block;
+	animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }

@@ -1727,6 +1727,64 @@ a {
 	letter-spacing: 0.01em;
 	margin-left: auto;
 }
+.pagination {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 760px;
+	margin-top: -12px;
+	margin-bottom: 75px;
+	background-color: #ebebeb;
+}
+.pagination-back {
+	margin-right: auto;
+}
+.pagination-forward {
+	margin-left: auto;
+}
+.pagination-back a,
+.pagination-forward a {
+	display: inline-block;
+	margin: 0;
+	padding: 22px 29px 18px;
+	vertical-align: baseline;
+	color: #000000;
+}
+.pagination-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 440px;
+	margin: 0 auto;
+	padding: 0;
+	padding-left: 12px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.pagination-list-item a {
+	font-family: 'Gilroy','Helvetica', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 22px 14px 17px;
+	vertical-align: baseline;
+	text-decoration: none;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	opacity: 0.3;
+	color: #000000;
+}
+.pagination-list-item-current a {
+	opacity: 1;
+}
 .mail-form {
 	padding-top: 94px;
 	padding-left: 100px;

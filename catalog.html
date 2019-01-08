@@ -100,25 +100,25 @@
 					    	<h2 class="sorting-title h-styles-reset">Сортировка:</h2>
 					    	<form class="sorting-form" action="#" method="get">
 					    		<ul class="sorting-type-list ul-styles-reset">
-					    			<li>
+					    			<li class="sorting-type-list-item">
 					    				<input class="sorting-type-item visually-hidden" type="checkbox" name="sort-by-price" id="sort-by-price" value checked>
 			                  			<label class="sort-by-price-label" for="sort-by-price">По цене</label>
 					    			</li>
-					    			<li>
+					    			<li class="sorting-type-list-item">
 					    				<input class="sorting-type-item visually-hidden" type="checkbox" name="sort-by-type" id="sort-by-type" value>
 			                  			<label class="sort-by-type-label" for="sort-by-type">По типу</label>
 					    			</li>
-					    			<li>
+					    			<li class="sorting-type-list-item">
 					    				<input class="sorting-type-item visually-hidden" type="checkbox" name="sort-by-popularity" id="sort-by-popularity" value>
 			                  			<label class="sort-by-popularity-label" for="sort-by-popularity">По популярности</label>
 			                  		</li>
 					    		</ul>
 					    		<ul class="sorting-order-list ul-styles-reset">
-					    			<li>
+					    			<li class="sorting-order-list-iitem">
 					    				<input class="sort-order-item visually-hidden" type="checkbox" name="sort-order" id="ascending" value checked>
 					    				<label class="sort-order-ascending" for="ascending">По возрастанию</label>
 					    			</li>
-					    			<li>
+					    			<li class="sorting-order-list-iitem">
 					    				<input class="sort-order-item visually-hidden" type="checkbox" name="sort-order" id="descending" value>
 					    				<label class="sort-order-descending" for="ascending">По убыванию</label>
 					    			</li>
@@ -133,6 +133,22 @@
 		    		<section class="filters">
 			        	<h2 class="visually-hidden">Фильтр товаров</h2>
 			        	<form class="filter" method="get" action="#">
+			        		<fieldset class="filter-group">
+			        			<legend class="filter-title">Стоимость</legend>
+			        			<div class="range-filter">
+			        				<div class="range-controls">
+			        					<div class="scale">
+			        						<div class="bar"></div>
+			        					</div>
+			        					<div class="toggle toggle-min"></div>
+			        					<div class="toggle toggle-max"></div>
+			        				</div>
+			        				<div class="price-controls">
+			        					<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+			        					<label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+			        				</div>
+			        			</div>
+			        		</fieldset>
 			        		<fieldset class="filter-group">
 			        			<legend class="filter-title">Цвет</legend>
 			        			<ul class="ul-styles-reset">
@@ -235,10 +251,10 @@
 								<a href="#">Назад</a>
 							</span>
 							<ul class="pagination-list ul-styles-reset">
-								<li class="pagination-list-item">
+								<li class="pagination-list-item pagination-list-item-current">
 									<a href="#">1</a>
 								</li>
-								<li class="pagination-list-item pagination-list-item-current">
+								<li class="pagination-list-item">
 									<a href="#">2</a>
 								</li>
 								<li class="pagination-list-item">
@@ -246,7 +262,7 @@
 								</li>
 							</ul>
 							<span class="pagination-forward">
-								<a href="#">Вперёд</a>
+								<a href="#">Вперед</a>
 							</span>
 						</div>
 					</section>

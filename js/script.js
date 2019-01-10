@@ -1,3 +1,21 @@
+var page = document.querySelector('.page');
+var login = Array.prototype.slice.call(document.querySelectorAll('.log-out'));
+var logout = Array.prototype.slice.call(document.querySelectorAll('.log-in'));
+
+login.forEach(function (a) {
+  a.addEventListener('click', function () {
+    page.classList.add('page-logged');
+    page.classList.remove('page-not-logged');
+  });
+});
+
+logout.forEach(function (b) {
+  b.addEventListener('click', function () {
+    page.classList.remove('page-logged');
+    page.classList.add('page-not-logged');
+  });
+});
+
 var slider1 = document.querySelector(".slider-1");
 var slider2 = document.querySelector(".slider-2");
 var slider3 = document.querySelector(".slider-3");
@@ -159,6 +177,3 @@ window.addEventListener("keydown", function (evt) {
       }
     }
   });
-
-
-

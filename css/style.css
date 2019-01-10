@@ -270,6 +270,20 @@ a {
 .main-header-user-navigation-link:active {
 	opacity: 0.302;
 }
+.page-logged .log-out {
+  display: none;
+}
+.page-not-logged .log-in {
+  display: none;
+}
+.profile-link {
+	color: #000000;
+	margin-right: 16px;
+}
+.profile-log-out {
+	color: #000000;
+	opacity: 0.3;
+}
 .main-navigation {
 	position: relative;
 	display: -webkit-box;
@@ -388,7 +402,7 @@ a {
 	padding-top: 66px;
 }
 .main-footer-logo-and-user-navigation {
-	margin-bottom: 29px;
+	/*margin-bottom: 29px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -398,7 +412,23 @@ a {
 	flex-direction: row;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
-	align-items: center;
+	align-items: center;*/
+
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-bottom: 29px;
+    /*margin-bottom: 29px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;*/
 }
 .main-footer-logo {
 	width: 163px;
@@ -412,7 +442,7 @@ a {
 	opacity: 0.302;
 }
 .main-footer-user-navigation {
-	margin-left: auto;
+	/*margin-left: auto;
 	width: 325px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -420,7 +450,36 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin-top: -11px;
+	margin-top: -11px;*/
+
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.main-footer-user-navigation-item {
+	margin-left: 43px;
+}
+.main-footer-user-navigation .profile-link {
+	color: #ffffff;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: normal;
+}
+.main-footer-user-navigation .profile-log-out {
+	color: #ffffff;
+	opacity: 0.3;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: normal;
 }
 .main-footer-user-navigation .logout-link {
 	color: rgba(255, 255, 255, 0.302);
@@ -454,10 +513,14 @@ a {
 	color: rgba(255, 255, 255, 0.302);
 }
 .footer-login-link:before {
+	content: '';
+	display: inline-block;
+	vertical-align: baseline;
+	background-repeat: no-repeat;
 	width: 13px;
 	height: 12px;
 	background-image: url(../img/user-yellow.svg);
-	margin-right: 14px;
+	margin-right: 9px;
 }
 .footer-compare-link:before {
 	width: 10px;

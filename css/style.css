@@ -62,9 +62,9 @@ a {
 	background-image: -webkit-linear-gradient(#fff 0,#fff 58px,#f7e296 58px);
 	background-image: -o-linear-gradient(#fff 0,#fff 58px,#f7e296 58px);
 	background-image: linear-gradient(#fff 0,#fff 58px,#f7e296 58px);
-	padding-top: 39px;/*Не менять это значение*/
+	padding-top: 39px;
 	padding-right: 60px;
-	padding-bottom: 39px;/*Не менять это значение*/
+	padding-bottom: 39px;
 	padding-left: 60px;
 }
 .main-header-logo {
@@ -402,33 +402,16 @@ a {
 	padding-top: 66px;
 }
 .main-footer-logo-and-user-navigation {
-	/*margin-bottom: 29px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;*/
-
-	display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-    margin-bottom: 29px;
-    /*margin-bottom: 29px;
-    font-family: 'Open Sans', 'Arial', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 30px;*/
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+	margin-bottom: 29px;
 }
 .main-footer-logo {
 	width: 163px;
@@ -442,24 +425,14 @@ a {
 	opacity: 0.302;
 }
 .main-footer-user-navigation {
-	/*margin-left: auto;
-	width: 325px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	margin-top: -11px;*/
-
-	display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
 }
 .main-footer-user-navigation-item {
 	margin-left: 43px;

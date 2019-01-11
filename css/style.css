@@ -1616,7 +1616,7 @@ a {
 	opacity: 0.3;
 }
 .filter-checkbox:focus + .filter-label {
-	outline: 1px solid #f0c52e;
+	outline: -webkit-focus-ring-color auto 5px;
 }
 .filter-checkbox:hover + .filter-label {
 	cursor: pointer;
@@ -1625,7 +1625,7 @@ a {
 	opacity: 0.6;
 }
 .filter-radiobutton:focus + .filter-label {
-	outline: 1px solid #f0c52e;
+	outline: -webkit-focus-ring-color auto 5px;
 }
 .filter-radiobutton:hover + .filter-label {
 	cursor: pointer;

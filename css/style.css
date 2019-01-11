@@ -893,6 +893,8 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 .catalog-goods-list-item {
 	width: 160px;

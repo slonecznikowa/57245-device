@@ -19,34 +19,26 @@ logout.forEach(function (b) {
 var slider1 = document.querySelector(".slider-1");
 var slider2 = document.querySelector(".slider-2");
 var slider3 = document.querySelector(".slider-3");
-
 var sliderButton1 = document.querySelector(".button-slider-1");
 var sliderButton2 = document.querySelector(".button-slider-2");
 var sliderButton3 = document.querySelector(".button-slider-3");
-
 var servicesSlider1 = document.querySelector(".services-slider-1");
 var servicesSlider2 = document.querySelector(".services-slider-2");
 var servicesSlider3 = document.querySelector(".services-slider-3");
-
 var servicesButton1 = document.querySelector(".services-button-slider-1");
 var servicesButton2 = document.querySelector(".services-button-slider-2");
 var servicesButton3 = document.querySelector(".services-button-slider-3");
-
 var mapButton = document.querySelector(".contacts-map-img");
 var mapModal = document.querySelector(".modal-map");
 var mapClose = document.querySelector(".modal-map .modal-close");
-
 var mailButton = document.querySelector(".contact-us-link");
 var mailModal = document.querySelector(".modal-mail");
 var mailClose = document.querySelector(".modal-mail .modal-close");
-
 var mailForm = mailModal.querySelector(".mail-form");
 var mailName = mailModal.querySelector(".mail-name-input");
 var mailEmail = mailModal.querySelector(".mail-email-input");
-
 var isStorageSupport = true;
   var storage = "";
-  
   try {
     storage = localStorage.getItem(".mail-name-input");
   } catch (err) {
@@ -113,7 +105,6 @@ servicesButton3.addEventListener("click", function(evt) {
   servicesButton3.classList.add("services-slider-controls-button-active");
 } );
 
-
 mapButton.addEventListener("click", function(evt) {
   evt.preventDefault();
   mapModal.classList.add("modal-open");
@@ -123,7 +114,6 @@ mapClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   mapModal.classList.remove("modal-open");
 } );
-
 
 mailButton.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -157,7 +147,6 @@ mailForm.addEventListener("submit", function (evt) {
         }
     }
   });
-
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {

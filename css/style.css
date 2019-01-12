@@ -1408,26 +1408,17 @@ a {
 .sorting-type-list-item {
 	margin-right: 27px;
 }
-.sorting-type-list-item:hover label {
-	cursor: pointer;
-}
 .sorting-type-list-link {
 	color: #000000;
-}
-.sort-by-price-label,
-.sort-by-type-label,
-.sort-by-popularity-label {
 	font-size: 14px;
 	line-height: 18px;
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	opacity: 0.3;
 }
-.sort-by-price-label:hover,
-.sort-by-type-label:hover,
-.sort-by-popularity-label:hover {
+.sorting-type-list-link:hover {
 	opacity: 0.6;
 }
-.sorting-type-item:checked + label {
+.sorting-type-list-link:active {
 	opacity: 1;
 }
 .sorting-order-list {

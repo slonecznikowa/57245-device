@@ -237,7 +237,7 @@ a {
 	width: 13px;
 	height: 12px;
 	background-image: url(../img/user.svg);
-	margin-right: 8px;
+	margin-right: 12px;
 }
 .compare-link::before {
 	content: '';
@@ -308,7 +308,7 @@ a {
 	width: 13px;
 	height: 12px;
 	background-image: url(../img/user.svg);
-	margin-right: 8px;
+	margin-right: 13px;
 }
 .profile-log-out {
 	color: #000000;
@@ -533,7 +533,7 @@ a {
 	width: 13px;
 	height: 12px;
 	background-image: url(../img/user-yellow.svg);
-	margin-right: 9px;
+	margin-right: 14px;
 }
 .footer-compare-link::before {
 	content: '';
